@@ -9,7 +9,7 @@ exports.initializePayment = async (email, amount, metadata = {}) => {
       email,
       amount: amount * 100, // Paystack expects amount in kobo
       metadata,
-      callback_url: `https://localhost:3000/payment/callback?rentalId=${metadata.rentalId}`
+      callback_url: `https://carrental-0dry.onrender.com/payment/callback?rentalId=${metadata.rentalId}`
     },
     {
       headers: {
